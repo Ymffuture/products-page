@@ -1,0 +1,381 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 1em sans-serif;
+
+}
+header{
+    background: rgb(25, 240, 125);
+    padding: 60px;
+
+}
+.main{
+    background-image: linear-gradient(rgb(3, 3, 3), rgba(0, 59, 28, 0.54)) ,url(images/images\ \(32\).jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px;
+}
+#p{
+    opacity: .6;
+    font-style: oblique;
+}
+.testimonials {
+    background-color: hsla(172, 69%, 86%, 0.648);
+    padding: 50px 0;
+}
+
+.testimonials .container-dm {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-weight: bold;
+    padding: 10px;
+}
+.container-dm{
+    padding: 24px;
+    font-size: 20px;
+    color: #11022d;
+}
+
+footer{
+    padding: 20px;
+    background: gray;
+    opacity: .6;
+}
+.container-dm-5{
+    color: rgb(219, 203, 237);
+}
+#span{
+    color: #f9f9f9;
+    text-shadow: 2px 4px 2px black ;
+    animation: glow 3s ease-in infinite;
+    
+}
+@keyframes glow {
+    75%{
+        color: teal;
+        text-shadow: 3px 2px;
+        
+    }
+    50%{
+        color: black;
+        text-shadow: 1px 2px white;
+
+    }
+    100%{
+        color:  rgb(41, 41, 149);
+    }
+}
+h2{
+    padding: 20px;
+}
+ul{
+    margin-top: 10px;
+}
+li{
+    padding: 4px;
+    list-style-type: none;
+    padding-right: 25px;
+}
+.cta-button{
+    padding: 10px;
+    border-radius:8px;
+    text-decoration: none;
+    color: rgb(25, 240, 125);
+    background: black;
+
+}
+.cta-button:hover{
+    background: rgb(25, 240, 125);
+    color: black;
+    transition: background .3s ease-in;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+body{
+    zoom: 75%;
+}
+    header p {
+        font-size: 16px;
+    }
+  
+.image-mk{
+    width: 100px;
+    height: 40px;
+}
+    .container-dm h2 {
+        font-size: 24px;
+    }
+
+    .container-dm p {
+        font-size: 16px;
+    }
+
+    .container-dm ul li {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .testimonials .container-dm {
+        padding: 0 20px;
+    }
+
+    .container-dm {
+        padding: 0 20px;
+    }
+   
+}
+
+.c-clx{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(30deg, transparent,rgba(57, 248, 162, 0.131));
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.button{
+    top: -30px;
+    color: gray;
+    position: absolute;
+}
+.name{
+    position: absolute;
+    top: 30px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-mk{
+    width: 50px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: 0.8s;
+    
+}
+
+.image-mk:hover{
+    width: 290px;
+    box-sizing: border-box;
+    cursor: pointer;
+ 
+
+}
+
+.image-mk:nth-child(1) {
+    background-image: url("images/download\ \(4\).jpeg");
+}
+.image-mk:nth-child(2) {
+    background-image: url("images/images\ \(30\).jpeg");
+}
+.image-mk:nth-child(3) {
+    background-image: url("images/images\ \(31\).jpeg");
+}
+.image-mk:nth-child(4) {
+    background-image: url("images/images\ \(33\).jpeg");
+}
+.image-mk:nth-child(5) {
+    background-image: url("images/images\ \(34\).jpeg");
+}
+
+
+ /* .image::before  */
+.image-mk:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(0deg, black 50%, transparent 50%); */
+    background: linear-gradient(0deg, black 0%, black 10%, transparent );
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    
+}
+
+.image-mk .about{
+    color: aliceblue;
+    position: absolute;
+    align-items: end;
+    width: 300px;
+    height: 40%;
+    padding: 0 35px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.image-mk:hover .about{
+    transform: translateX(0);
+    /* transition-delay: 0.1s; */
+    opacity: 1;
+}
+
+
+.about .name{
+    font-size: 30px;
+    line-height: 25px;
+    color: rgb(230, 249, 108);
+    margin: 10px 0;
+    
+}
+
+.about{
+    color: rgb(195, 163, 217);
+    margin-bottom: 4px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.about .button{
+    font-size: 25px;
+}
+
+.about .button ion-icon{
+    padding: 0 5px;
+}
+textarea{
+    border: 1px dotted rgb(25, 240, 125);
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+form{
+    margin: 10px;
+    border-radius: 8px;
+    background: rgba(50, 88, 118, 0.453);
+    padding: 20px;
+    
+}
+option{
+    background: grey;
+    border-radius: 8px;
+    transition: background 2s ease-in;
+   
+}
+option:hover, select:hover{
+    color: rgb(28, 0, 48);
+}
+input{
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+select{
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    transition:  background 2s ease-in;
+}
+button{
+    border: none;
+    background:rgb(17, 111, 211);
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: #f9f9f9;
+    cursor: 
+    pointer;
+}
+.info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    opacity: .7;
+    color: rgb(138, 138, 138);
+}
+hr{
+    border: #1e1e1e 2px double;
+}
+.logo{
+    border-radius: 12px;
+    filter: contrast(4);
+    filter: invert(2);
+    filter: grayscale(50);
+}
+.table{
+    background: #11022d;
+}
+.shop{
+    background: rgba(178, 100, 100, 0.815);
+    padding: 100px;
+    margin: 20px;
+    align-items: center;
+    border: red 1px solid;
+}
+#shop{
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    
+}
+.cta-button-2{
+    text-decoration: none;
+    padding: 1px;
+    margin: 20px;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #11022d;
+    border-radius: 8px;
+    
+}
+[src="images/icons8-fix-100.png"]{
+ height: 200px;
+ width: 200px;
+ z-index: -1;
+ background: #b55959;
+ border-radius: 80px 80px 1px 80px;
+
+}
