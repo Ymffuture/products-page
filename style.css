@@ -349,7 +349,7 @@ hr{
     background: #11022d;
 }
 .shop{
-    background: rgba(178, 100, 100, 0.815);
+    background: rgba(178, 100, 100, 0.481);
     padding: 100px;
     margin: 20px;
     align-items: center;
@@ -361,21 +361,31 @@ hr{
     font-size: 50px;
     
 }
-.cta-button-2{
-    text-decoration: none;
-    padding: 1px;
-    margin: 20px;
-    color: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: #11022d;
-    border-radius: 8px;
-    
-}
+
 [src="images/icons8-fix-100.png"]{
  height: 200px;
  width: 200px;
  z-index: -1;
- background: #b55959;
+ 
  border-radius: 80px 80px 1px 80px;
 
+}
+.btn2{
+    margin: 18px;
+    text-decoration: none;
+    color: #f9f9f9;
+    background: rgb(17, 111, 211);
+    padding: 9px;
+    border-radius: 8px;
+    
+}
+.btn:hover , .btn2:hover{
+    opacity: .7;
+}
+img{
+    border-radius: 12px;
+    filter: grayscale(8);
+    filter: contrast(2);
+    -webkit-filter: grayscale(8);
+    margin: 0;
 }
